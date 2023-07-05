@@ -9,7 +9,7 @@ public class DesignController {
 
     @GetMapping("/design")
     public String returnDesignPage() {
-        return "design";
+        return "pages/design";
     }
 
 }

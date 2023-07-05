@@ -7,6 +7,6 @@ import org.springframework.web.bind.annotation.GetMapping;
 public class GamesController {
     @GetMapping("/games")
     public String returnGamesPage() {
-        return "games";
+        return "pages/games";
     }
 }
