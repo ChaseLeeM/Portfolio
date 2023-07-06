@@ -1,19 +1,22 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org" lang="en">
 
-<head th:replace="~{partials/head :: head}">
+<head>
 
     <title>Home</title>
+    <link rel="stylesheet" type="text/css" href="/css/home.css" />
 
 </head>
 <body>
 
-    <nav th:replace="~{partials/navbar :: navbar}"></nav>
+    <nav th:replace="partials/navbar :: navbar"></nav>
 
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <h1>Home</h1>
+                <div class="header">
+                    <h1>WeaveAndWeb</h1>
+                </div>
                 <p>This is the home page.</p>
             </div>
         </div>
