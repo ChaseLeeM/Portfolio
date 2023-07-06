@@ -7,15 +7,19 @@
 
 </head>
 
-<body>
+<body class="home-body">
 
     <div th:replace="~{partials/partials :: navbar}"></div>
-
-                <div class="page-title">
-                    <h1>WeaveAndWeb</h1>
-                </div>
-                <p>This is the home page.</p>
-                <p>It's a work in progress.</p>
-
+<!--    Page Content    -->
+    <div class="page-content">
+        <div class="page-title">
+            <h1>WeaveAndWeb</h1>
+        </div>
+<!--     Intro Paragraphs   -->
+        <div class="home-post page-text typewriter">
+            <p class="line-space">This is the home page.</p>
+            <p class="line-space">It's a work in progress.</p>
+        </div>
+    </div>
 </body>
 </html>

@@ -1,12 +1,54 @@
 .page-title {
     text-align: center;
-    margin-top: 4em;
+    margin-top: 47px;
+    padding: 1em;
+    color: #000000;
+    background-color: #336699;
+    width: 100%;
+}
+
+.page-text {
+    text-align: center;
+    font-size: 20px;
+    margin-top: 32px;
     padding: 1em;
     color: #000000;
 }
+.line-space{
+    margin: 8px;
+}
 
-body {
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+.typewriter {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid transparent; /* The typewriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: 1px; /* Adjust as needed */
+    animation:
+            typing 3.5s steps(40, end),
+            blink-caret 3.5s step-end;
+}
+
+/* The typing effect */
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    100% { border-color: transparent; }
+}
+
+.home-body{
     background-color: #F0F0F0;
     font-family: 'Playfair Display', serif;
-
+    margin: 2px;
+    padding: 8px;
 }
