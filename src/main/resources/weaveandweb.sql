@@ -7,13 +7,13 @@ DROP TABLE IF EXISTS persons;
 CREATE TABLE persons (
                          id INT PRIMARY KEY AUTO_INCREMENT,
                          name VARCHAR(100),
-                         email VARCHAR(100) UNIQUE
-    -- Include any other common attributes for persons
+                         email VARCHAR(100) UNIQUE,
+                         biography TEXT
 );
 
 CREATE TABLE blogs (
                        id INT PRIMARY KEY AUTO_INCREMENT,
-                       title VARCHAR(255),
+                       title VARCHAR(100),
                        content TEXT,
                        person_id INT,
                        date DATE,
@@ -22,7 +22,7 @@ CREATE TABLE blogs (
 
 CREATE TABLE stories (
                          id INT PRIMARY KEY AUTO_INCREMENT,
-                         title VARCHAR(255),
+                         title VARCHAR(100),
                          content TEXT,
                          date DATE,
                          person_id INT,
@@ -31,7 +31,7 @@ CREATE TABLE stories (
 
 CREATE TABLE art (
                      id INT PRIMARY KEY AUTO_INCREMENT,
-                     title VARCHAR(255),
+                     title VARCHAR(100),
                      url VARCHAR(255),
                      person_id INT,
                      date DATE,
@@ -40,6 +40,6 @@ CREATE TABLE art (
 
 CREATE TABLE images (
                         id INT PRIMARY KEY AUTO_INCREMENT,
-                        title VARCHAR(255),
+                        title VARCHAR(100),
                         url VARCHAR(255)
 );
