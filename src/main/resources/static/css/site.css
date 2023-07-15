@@ -52,3 +52,24 @@ body {
     margin: 2px;
     padding: 4px;
 }
+
+.home-row-design {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: lightseagreen 1px solid;
+    box-shadow: slategrey 1px 1px 1px;
+}
+
+.home-col-design {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: lightseagreen 1px solid;
+    box-shadow: slategrey 1px 1px 1px;
+}
+
+.intro-design{
+    margin: 20px;
+    border: lightseagreen 1px solid;
+    box-shadow: slategrey 1px 1px 1px;
+    background-color: lightblue;
+}

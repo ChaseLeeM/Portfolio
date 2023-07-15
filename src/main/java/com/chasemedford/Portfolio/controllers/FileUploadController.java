@@ -1,6 +1,7 @@
 package com.chasemedford.Portfolio.controllers;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.multipart.MultipartFile;
@@ -15,12 +16,14 @@ import java.nio.file.Paths;
 @Controller
 @RequestMapping("/upload")
 public class FileUploadController {
+    @GetMapping
+    public String returnUploadPage() {
+        return "pages/upload";
+    }
 
     @PostMapping
     public String handleFileUpload(@RequestParam("file") MultipartFile file, RedirectAttributes redirectAttributes) {
-        // Logic to handle file upload...
 
-        // If you need to save the file in a local directory
         try {
             Path path = Paths.get("uploads/" + file.getOriginalFilename());
             Files.write(path, file.getBytes());
